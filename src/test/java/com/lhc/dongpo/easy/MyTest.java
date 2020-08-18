@@ -1,5 +1,6 @@
 package com.lhc.dongpo.easy;
 
+import com.lhc.dongpo.mid.LongestSubString;
 import com.lhc.dongpo.mid.TwoAdd;
 import org.junit.jupiter.api.Test;
 
@@ -21,5 +22,12 @@ public class MyTest {
         l2.next = twoAdd.new ListNode(9);
         TwoAdd.ListNode res = twoAdd.addTwoNumbers(l1, l2);
         System.out.println(res);
+    }
+
+    @Test
+    public void longestSubString(){
+        String s = "pwwkew";
+        LongestSubString longestSubString = new LongestSubString();
+        longestSubString.lengthOfLongestSubstring(s);
     }
 }
