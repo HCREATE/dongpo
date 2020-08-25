@@ -4,10 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Description:
+ * Description: 最长不重复子串
  * User: jt.hao
  * Date: 2020-08-18
- * Time: 9:38
+ * Time: 19:38
  */
 public class LongestSubString {
     public int lengthOfLongestSubstring(String s) {
