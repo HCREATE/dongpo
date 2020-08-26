@@ -4,7 +4,7 @@ package com.lhc.dongpo.hard;
  * Description: 4.median(有序数组中位数)
  * User: jt.hao
  * Date: 2020-08-26
- * Time: 9:55
+ * Time: 19:55
  */
 public class Median {
     public double findMedianSortedArraysEasy(int[] nums1, int[] nums2) {
