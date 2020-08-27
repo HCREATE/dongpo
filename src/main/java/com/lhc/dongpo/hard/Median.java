@@ -8,10 +8,9 @@ package com.lhc.dongpo.hard;
  */
 public class Median {
     public double findMedianSortedArraysEasy(int[] nums1, int[] nums2) {
-        int[] nums;
         int m = nums1.length;
         int n = nums2.length;
-        nums = new int[m + n];
+        int[] nums = new int[m + n];
         if (m == 0) {
             return getMedian(nums2, n);
         }
@@ -50,6 +49,7 @@ public class Median {
         }
     }
 
+
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
             return findMedianSortedArrays(nums2, nums1);
@@ -79,8 +79,7 @@ public class Median {
                 median1 = Math.max(nums_im1, nums_jm1);
                 median2 = Math.min(nums_i, nums_j);
                 left = i + 1;
-            }
-            else {
+            } else {
                 right = i - 1;
             }
         }

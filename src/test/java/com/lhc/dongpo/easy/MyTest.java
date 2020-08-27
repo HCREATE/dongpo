@@ -1,5 +1,6 @@
 package com.lhc.dongpo.easy;
 
+import com.lhc.dongpo.hard.Median;
 import com.lhc.dongpo.mid.LongestSubString;
 import com.lhc.dongpo.mid.TwoAdd;
 import org.junit.jupiter.api.Test;
@@ -13,7 +14,7 @@ import org.junit.jupiter.api.Test;
 public class MyTest {
 
     @Test
-    public void twoAdd(){
+    public void twoAdd() {
         TwoAdd twoAdd = new TwoAdd();
         TwoAdd.ListNode l1 = twoAdd.new ListNode(1);
         l1.next = twoAdd.new ListNode(1);
@@ -25,9 +26,18 @@ public class MyTest {
     }
 
     @Test
-    public void longestSubString(){
+    public void longestSubString() {
         String s = "pwwkew";
         LongestSubString longestSubString = new LongestSubString();
         longestSubString.lengthOfLongestSubstring(s);
+    }
+
+
+    @Test
+    public void median(){
+        int[] nums1 = {1,2,5,7,9};
+        int[] nums2 = {2,3,7,9,11};
+        Median median = new Median();
+        System.out.println(median.findMedianSortedArraysEasy(nums1, nums2));
     }
 }
