@@ -5,6 +5,11 @@ import com.lhc.dongpo.mid.LongestSubString;
 import com.lhc.dongpo.mid.TwoAdd;
 import org.junit.jupiter.api.Test;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 /**
  * Description:
  * User: jt.hao
@@ -39,5 +44,27 @@ public class MyTest {
         int[] nums2 = {2,3,7,9,11};
         Median median = new Median();
         System.out.println(median.findMedianSortedArraysEasy(nums1, nums2));
+    }
+
+
+    @Test
+    public void duplicateKey(){
+        List<String> list = new LinkedList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("banana");
+        list.add("pear");
+        Map<String, String> map = list.stream().
+                collect(Collectors.
+                        toMap(item -> item, item -> item, (item1, item2) -> item1));
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.toString());
+        }
+    }
+
+    @Test
+    public void test1(){
+        //false be593660f7f411ea2217099c646f0d07 be593660f7f411ea2217099c646f0d07
+        System.out.println("be593660f7f411ea2217099c646f0d07".equals("be593660f7f411ea2217099c646f0d07"));
     }
 }
