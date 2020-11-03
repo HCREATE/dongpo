@@ -61,10 +61,4 @@ public class MyTest {
             System.out.println(entry.toString());
         }
     }
-
-    @Test
-    public void test1(){
-        //false be593660f7f411ea2217099c646f0d07 be593660f7f411ea2217099c646f0d07
-        System.out.println("be593660f7f411ea2217099c646f0d07".equals("be593660f7f411ea2217099c646f0d07"));
-    }
 }
