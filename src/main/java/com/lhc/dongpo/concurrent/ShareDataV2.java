@@ -59,8 +59,6 @@ public class ShareDataV2 {
             }
             synchronized (pool) {
                 //池子满了，生产者停止生产
-                //埋个坑，这里用的if
-                //TODO 判断
                 while (pool.size() == 0) {
                     try {
                         System.out.println("pool is empty, wating...");
